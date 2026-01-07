@@ -38,6 +38,8 @@ jobs:
           ANTHROPIC_MODEL: "claude-sonnet-4.5"
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            日本語で話してください。
 
           # This is an optional setting that allows Claude to read CI results on PRs
           additional_permissions: |
