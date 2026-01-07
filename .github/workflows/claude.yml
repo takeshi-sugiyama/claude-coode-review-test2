@@ -33,6 +33,9 @@ jobs:
       - name: Run Claude Code
         id: claude
         uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_BASE_URL: "https://api.llm-gateway.kurisu.nico"
+          ANTHROPIC_MODEL: "claude-sonnet-4.5"
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
 
